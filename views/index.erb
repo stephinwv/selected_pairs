@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "css/style.css">
+<html>
+<body>
+
+<p>Click the button to add a name.</p>
+<!-- <input type="button" name="names"><br> -->
+
+<button onclick="myFunction()">Add Name</button><br>
+<form method = "post" action = "/pairs" id = "myInput">
+<input type = "submit" onclick = "random_pairing.rb">
+
+</form>
+<script>
+function myFunction() {
+    var input = document.createElement("input");
+    input.type="text";
+    input.required=true;
+    input.name="names[]"
+    document.body.appendChild(input);
+    
+}
+</script>
+
+</body>
+</html>
