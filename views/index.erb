@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <link rel = "stylesheet" href = "css/style.css">
 <html>
 <body>
@@ -6,21 +7,29 @@
 <p>Click the button to add a name.</p>
 <!-- <input type="button" name="names"><br> -->
 
-<button onclick="myFunction()">Add Name</button><br>
-<form method = "post" action = "/pairs" id = "myInput">
-<input type = "submit" onclick = "random_pairing.rb">
-
+<!-- <center><form class = "text_s" method = "post" action = "pairs" id = "text_box">
+    <input type ="text" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()">
+    <button type = "button" onclick = "adding()">Add a Box!</button>
+    <button type = "button" onclick = "subtract()">Drop a Box!</button>
+    <p id = "names"></p>
+    <br>
+    <input type = "submit"> -->
+<!-- </form> --></center>
+<div id = "random_names">
+<form method = "post" action = "/pairs">
+<input type = "button" id = "name_button" value = "Add Names" onclick="myFunction()"/>
+<div id = "list_names"></div>
+<input type = "submit">
 </form>
+</body>
+
 <script>
 function myFunction() {
     var input = document.createElement("input");
     input.type="text";
     input.required=true;
     input.name="names[]"
-    document.body.appendChild(input);
-    
+    document.getElementById("list_names").appendChild(input).value;
 }
 </script>
-
-</body>
 </html>

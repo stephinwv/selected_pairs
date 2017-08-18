@@ -1,5 +1,5 @@
 
-def pair_names(names)
+def pair(names)
 	array = []
 	#Creates an empty array to hold objects later called
 	array_paired_names = names.shuffle.each_slice(2)
@@ -23,7 +23,7 @@ def pair_names(names)
 	end
 	array.map!{ |name1,name2,name3| "#{name1} " "#{name2} " "#{name3}"}.join"<br>"
 	#map is kind of like each, runs through a block for each element. map! changes the original array.It "maps" a function to each item into an array.
-array
+
 end  
 
  
