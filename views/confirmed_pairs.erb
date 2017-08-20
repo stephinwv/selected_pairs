@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<link rel = "stylesheet" href = "css/style.css">
+
+<html>
+<center>
+<header>
+	<h1>Thank you for confirming your pairs.</h1>
+</header>
+
+<body>
+<form action = "/confirmed_pairs">
+
+	<%pair.each do|group|%>
+	
+	<%group%>
+
+	<br>
+	<%end%>
+	<Your pairs of <%=pair%> are ready to deploy to work!!!!>
+</form>
+
+
+</center>
+</body>
+</html>

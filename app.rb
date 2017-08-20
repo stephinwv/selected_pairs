@@ -26,12 +26,3 @@ post'/pairs'do
 	
 erb :pairs, :locals => {pair: pair, names: names}
 end
-# post'/pairs'do
-# 	names = params[:names]
-# 	pair = params[:pair]
-# 	pair = pair(names)
-	
-# erb :pairs, :locals => {pair: pair, names: names}
-# end
-
-
