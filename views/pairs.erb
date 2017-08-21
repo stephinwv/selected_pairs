@@ -6,9 +6,9 @@
 <center><h4 class = "text"> And your pairs are : <br><p>
 
 
-<form method = "post" action = "/pairs">
+<form method = "post" action = "/confirmed_pairs">
 	<% pair.each do |group|%>
-	<p><input  type="checkbox"  value= '<%=group%>' name= 'pair[]'><%=group%> </p>	
+	<p><input  type="checkbox"  value= '<%=group%>' name= 'names[]'><%=group%> </p>	
 	<%end%>
  <input type="submit" name="confirm" value="confirm">
 </form>

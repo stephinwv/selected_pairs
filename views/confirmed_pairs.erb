@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<link rel = "stylesheet" href = "css/style.css">
+
 
 <html>
 <center>
@@ -9,18 +9,11 @@
 </header>
 
 <body>
-<form action = "/confirmed_pairs">
-
-	<%pair.each do|group|%>
-	
-	<%group%>
-
-	<br>
-	<%end%>
-	<Your pairs of <%=pair%> are ready to deploy to work!!!!>
-</form>
-
-
+<form method="pos" action = "/confirmed_pairs">
+	<%names.each do |group|%>
+	<center><p> ~ <%=group%> </p></center>
+	<%end%> 
+	<p>Now let's get to work!!!</p>
 </center>
 </body>
 </html>
